@@ -19,8 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gamecore.socket_main" target="1.6" />
-      <module name="gamecore.socket_test" target="1.6" />
+      <module name="gamecore.socket_main" target="1.8" />
+      <module name="gamecore.socket_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

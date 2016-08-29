@@ -1,4 +1,4 @@
-package com.gamecoder.boot;
+package com.gamecoder.tcp;
 
 import com.gamecoder.core.IConnect;
 import com.gamecoder.core.IData;

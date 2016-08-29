@@ -1,7 +1,5 @@
-package com.gamecoder.boot;
+package com.gamecoder.tcp;
 
-import com.gamecoder.core.BootHandler;
-import com.gamecoder.util.ConfigEntry;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -13,11 +11,9 @@ import io.netty.channel.socket.SocketChannel;
  * @date 2016/8/29 0029
  */
 public class ServerInitializer extends ChannelInitializer<SocketChannel> {
-    private final BootHandler param;
-    private final ConfigEntry config;
-    public ServerInitializer(ConfigEntry config, BootHandler param){
+    private final TcpBootHandler param;
+    public ServerInitializer(TcpBootHandler param){
         this.param = param;
-        this.config = config;
     }
 
 

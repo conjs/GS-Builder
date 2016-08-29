@@ -1,6 +1,5 @@
-package com.gamecoder.boot;
+package com.gamecoder.rpc;
 
-import com.gamecoder.core.BootHandler;
 import com.gamecoder.util.ConfigEntry;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -18,29 +17,29 @@ import io.netty.handler.logging.LoggingHandler;
  * @date 2016/8/29 0029
  */
 public class Booter {
-    public void start(final ConfigEntry config, final BootHandler param) throws Exception{
+    public void start(final ConfigEntry config, final RpcBootHandler handler) throws Exception{
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
-                    .channel(NioServerSocketChannel.class)
-                    .option(ChannelOption.SO_KEEPALIVE, true)
+                    .option(ChannelOption.SO_KEEPALIVE,true)
                     .option(ChannelOption.TCP_NODELAY,true)
+                    .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.ERROR))
-                    .childHandler(new ServerInitializer(config,param));
+                    .childHandler(new ServerInitializer(handler));
 
-            if(param.getInitor().isPresent()){
-                param.getInitor().get().run();
+
+            if(handler.getInitor().isPresent()){
+                handler.getInitor().get().run();
             }
 
             String IP = config.getValue("IP");
             int PORT = config.getValue("PORT");
 
-
             Channel ch = b.bind(IP,PORT).sync().channel();
 
-            System.out.println("Server Listen on:" + PORT );
+            System.out.println("RPC Server Listen on:" + PORT );
             ch.closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();

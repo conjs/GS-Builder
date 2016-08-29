@@ -1,24 +1,28 @@
-package com.gamecoder.core;
+package com.gamecoder.websocket;
+
+import com.gamecoder.core.*;
 
 import java.util.Optional;
 
 /**
- * BootHandler
+ * TcpBootHandler
  *
  * @author Cuizw
  * @date 2016/8/29 0029
  */
-public class BootHandler {
+public class WebSocketBootHandler {
     private Optional<Initor> initor;
     private IConnect connect;
     private IDisconnect disconnect;
-    private IData data;
+    private IWebSocketData webSocketData;
+    private IHttpData httpData;
 
-    public BootHandler(Optional<Initor> initor, IConnect connect, IDisconnect disconnect, IData data) {
+    public WebSocketBootHandler(Optional<Initor> initor, IConnect connect, IDisconnect disconnect, IWebSocketData webSocketData, IHttpData httpData) {
         this.initor = initor;
         this.connect = connect;
         this.disconnect = disconnect;
-        this.data = data;
+        this.webSocketData = webSocketData;
+        this.httpData = httpData;
     }
 
     public Optional<Initor> getInitor() {
@@ -45,11 +49,19 @@ public class BootHandler {
         this.disconnect = disconnect;
     }
 
-    public IData getData() {
-        return data;
+    public IWebSocketData getWebSocketData() {
+        return webSocketData;
     }
 
-    public void setData(IData data) {
-        this.data = data;
+    public void setWebSocketData(IWebSocketData webSocketData) {
+        this.webSocketData = webSocketData;
+    }
+
+    public IHttpData getHttpData() {
+        return httpData;
+    }
+
+    public void setHttpData(IHttpData httpData) {
+        this.httpData = httpData;
     }
 }

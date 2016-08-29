@@ -1,4 +1,4 @@
-package com.gamecoder.boot;
+package com.gamecoder.tcp;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
