@@ -1,11 +1,11 @@
 
-import com.gamecoder.rpc.RpcBootHandler;
-import com.gamecoder.rpc.RpcHandler;
-import com.gamecoder.tcp.ServerMessage;
+import com.gamecoder.core.rpc.RpcBootHandler;
+import com.gamecoder.core.rpc.RpcHandler;
+import com.gamecoder.core.tcp.ServerMessage;
 import com.gamecoder.core.*;
-import com.gamecoder.tcp.TcpBootHandler;
+import com.gamecoder.core.tcp.TcpBootHandler;
 import com.gamecoder.util.ConfigEntry;
-import com.gamecoder.websocket.WebSocketBootHandler;
+import com.gamecoder.core.websocket.WebSocketBootHandler;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.FullHttpRequest;
@@ -49,7 +49,7 @@ public class Tester {
         };
 
         //Start Tcp Server
-        new com.gamecoder.tcp.Booter().start(conf,new TcpBootHandler(Optional.empty(),connecter,disconnect,onData));
+        new com.gamecoder.core.tcp.Booter().start(conf,new TcpBootHandler(Optional.empty(),connecter,disconnect,onData));
     }
 
     public void startWebSocket() throws Exception{
@@ -89,7 +89,7 @@ public class Tester {
         };
 
         //Start WebSocket Server
-        new com.gamecoder.websocket.Booter().start(conf,new WebSocketBootHandler(Optional.empty(),connecter,disconnect,webSocketData,httpData));
+        new com.gamecoder.core.websocket.Booter().start(conf,new WebSocketBootHandler(Optional.empty(),connecter,disconnect,webSocketData,httpData));
     }
 
 
@@ -106,7 +106,7 @@ public class Tester {
         };
 
         //Start Rpc Server
-        new com.gamecoder.rpc.Booter().start(conf,new RpcBootHandler(Optional.empty(),httpData));
+        new com.gamecoder.core.rpc.Booter().start(conf,new RpcBootHandler(Optional.empty(),httpData));
     }
 
 

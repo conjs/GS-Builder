@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fbb52d1-deae-45e2-a627-af69e41ae589" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/IHttpData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/IWebSocketData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/Booter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/RpcBootHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/RpcHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/ServerInitializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/Booter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/ServerInitializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebHttpHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebSocketBootHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebSocketHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/IData.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/IData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Tester.java" afterPath="$PROJECT_DIR$/src/test/java/Tester.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/boot/Booter.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/Booter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/boot/MessageCodec.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/MessageCodec.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/boot/ServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/boot/ServerInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerInitializer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/boot/ServerMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerMessage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/BootHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/TcpBootHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/Booter.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/Booter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/RpcBootHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/RpcBootHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/RpcHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/RpcHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/ServerInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/ServerInitializer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/Booter.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/Booter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/MessageCodec.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/MessageCodec.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/ServerHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/ServerInitializer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/ServerMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/TcpBootHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/TcpBootHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/Booter.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/Booter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/ServerInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/ServerInitializer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebHttpHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/WebHttpHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebSocketBootHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/WebSocketBootHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebSocketHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/WebSocketHandler.java" />
     </list>
     <ignored path="gamecore.socket.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,8 +121,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+            <state relative-caret-position="1691">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -594,6 +589,44 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecore.socket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecore.socket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1001,15 +1034,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1472435302853</updated>
-      <workItem from="1472435304294" duration="25058000" />
+      <workItem from="1472435304294" duration="25515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25058000" />
+    <option name="totallyTimeSpent" value="25515000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1018,13 +1051,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864694" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17864694" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21197917" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18921776" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18921776" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1138,7 +1171,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/ServerMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
@@ -1208,7 +1241,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebSocketHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/WebSocketHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="29" />
@@ -1224,18 +1257,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/ServerInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <element signature="e#398#399#0" expanded="false" />
-            <element signature="e#432#433#0" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/ServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/ServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
@@ -1245,7 +1278,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/MessageCodec.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/MessageCodec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
@@ -1253,7 +1286,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebHttpHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/WebHttpHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
@@ -1277,7 +1310,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/RpcBootHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/RpcBootHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
@@ -1285,30 +1318,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/RpcHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/RpcHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/ServerInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/ServerInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/WebSocketBootHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/WebSocketBootHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
@@ -1324,18 +1357,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/ServerInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/ServerInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/TcpBootHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/TcpBootHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -1369,7 +1402,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/websocket/Booter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/websocket/Booter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
@@ -1379,7 +1412,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/rpc/Booter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/rpc/Booter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
@@ -1389,7 +1422,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/tcp/Booter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gamecoder/core/tcp/Booter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
@@ -1411,8 +1444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+        <state relative-caret-position="1691">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
         </state>
       </provider>

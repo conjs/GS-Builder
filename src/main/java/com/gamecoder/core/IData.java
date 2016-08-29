@@ -1,6 +1,6 @@
 package com.gamecoder.core;
 
-import com.gamecoder.tcp.ServerMessage;
+import com.gamecoder.core.tcp.ServerMessage;
 import io.netty.channel.Channel;
 
 /**
