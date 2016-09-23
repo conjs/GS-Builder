@@ -1,6 +1,4 @@
-# GameCore.Socket
-
-This project is used to quickly build game services
+#This project is used to quickly build game services
 
 
 ## How to build
