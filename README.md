@@ -6,4 +6,4 @@
 * Rpc Server
 
 # Usage
-via: http://gs-builder.game-coder.com/
+via: https://lab.game-coder.com/gs-builder-java.html
