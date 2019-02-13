@@ -6,4 +6,4 @@
 * Rpc Server
 
 # Usage
-via: https://lab.game-coder.com/gs-builder-java.html
+via: <a href="https://lab.game-coder.com/gs-builder-java.html" target="_blank">Click</a>
